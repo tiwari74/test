@@ -1,0 +1,33 @@
+21:27:23.543 request:
+1 > POST https://qa-test.kickdrumtech.com/v1/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 45
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: qa-test.kickdrumtech.com
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
+{"username":"kickdrum","password":"kickdrum"}
+
+21:27:23.916 response time in milliseconds: 371.38
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Sun, 12 Jul 2020 15:57:22 GMT
+1 < Via: 1.1 5eac89c80c43223e9da095b517da9acf.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Id: bsSByMztyubJnX8_zh16tb35-TNe6_36ML274LMPm1ojTzgsD_kv0w==
+1 < X-Amz-Cf-Pop: DEL54-C2
+1 < X-Amzn-Trace-Id: Root=1-5f0b32e2-b4d463e91bca60e78101e5b6;Sampled=0
+1 < X-Cache: Miss from cloudfront
+1 < x-amz-apigw-id: PkTjYFeehcwFluw=
+1 < x-amzn-RequestId: 004931f8-88c3-466f-b827-d797ec28cdbe
+{"status":"Success","statusCode":200,"message":"Authentication Successful"}
+
+21:27:23.919 [print] {
+  "status": "Success",
+  "statusCode": 200,
+  "message": "Authentication Successful"
+}
+
+21:19:01.723 assertion failed: path: $, actual: {status=Success, statusCode=200, message=Authentication Successful}, expected: {status"=Success, statusCode"=200, message"=Authentication Successful}, reason: all key-values did not match
+

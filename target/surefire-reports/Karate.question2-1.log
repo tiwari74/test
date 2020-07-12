@@ -1,0 +1,34 @@
+21:51:17.032 request:
+1 > PUT https://qa-test.kickdrumtech.com/v1/user/kickdrum
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: qa-test.kickdrumtech.com
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
+{}
+
+21:51:17.976 response time in milliseconds: 938.97
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 92
+1 < Content-Type: application/json
+1 < Date: Sun, 12 Jul 2020 16:21:16 GMT
+1 < Via: 1.1 bd8e580492caac35a05a48f6ff8f5deb.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Id: F2QL7OPRslE0uSf7JJlGgCZMuRjYyiSE0n-wsIhsTJUqNyA1NOoo6Q==
+1 < X-Amz-Cf-Pop: DEL54-C2
+1 < X-Amzn-Trace-Id: Root=1-5f0b387c-b7b3606c60ad8fc603ba0b02;Sampled=0
+1 < X-Cache: Miss from cloudfront
+1 < x-amz-apigw-id: PkXDdF_yhcwFZIQ=
+1 < x-amzn-RequestId: 3cd0f9a6-bd75-48b8-b342-40699c07ca59
+{"status":"Success","statusCode":200,"message":"Your profile has been updated successfully"}
+
+21:51:17.982 [print] {
+  "status": "Success",
+  "statusCode": 200,
+  "message": "Your profile has been updated successfully"
+}
+
+
+oken"}
+{"status":"Success","statusCode":200,"message":"Your profile has been updated successfully"}

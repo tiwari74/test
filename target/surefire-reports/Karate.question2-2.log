@@ -1,0 +1,26 @@
+21:51:18.086 request:
+1 > PUT https://qa-test.kickdrumtech.com/v1/user/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: qa-test.kickdrumtech.com
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
+{}
+
+21:51:18.415 response time in milliseconds: 326.70
+1 < 403
+1 < Connection: keep-alive
+1 < Content-Length: 42
+1 < Content-Type: application/json
+1 < Date: Sun, 12 Jul 2020 16:21:16 GMT
+1 < Via: 1.1 941ebee04a90931a7a888e1adfca2331.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Id: SAnnXucY0ionEHtrtX9dl_ERt7juLKEceF_a6EzR6rgwE6mfHNxjlg==
+1 < X-Amz-Cf-Pop: DEL54-C2
+1 < X-Cache: Error from cloudfront
+1 < x-amz-apigw-id: PkXDiGnVhcwFWxg=
+1 < x-amzn-ErrorType: MissingAuthenticationTokenException
+1 < x-amzn-RequestId: 732cff8b-6346-4668-953b-80da3e7d3ba9
+{"message":"Missing Authentication Token"}
+
+21:38:22.953 status code was: 403, expected: 501, response time: 395, url: https://qa-test.kickdrumtech.com/v1/user/, response: {"message":"Missing Authentication Token"}
